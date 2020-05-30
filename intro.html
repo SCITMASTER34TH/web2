@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> 2.5D Parallax Effects / Vanilla JS </title>
+    <link rel="stylesheet" type="text/css" href="css/styleIntro.css">
+  </head>
+
+  <body>
+    <section>
+      <div id="bg"> </div>
+      <h2> Click HK416 </h2>
+      <a href="index.html">
+        <img src="img/hk416.png" class="girl">
+      </a>
+    </section>
+
+    <script>
+      var position = document.documentElement;
+      position.addEventListener("mousemove", e => {
+        position.style.setProperty('--x', e.clientX + "px");
+      })
+    </script>
+  </body>
+</html>
